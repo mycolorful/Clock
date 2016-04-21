@@ -1,0 +1,11 @@
+.settings/org.eclipse.jdt.core.prefs
+*.project
+*.dex
+*.class
+*.apk
+*.cache
+*.classpath
+*.ap_
+# generated files
+bin/
+gen/

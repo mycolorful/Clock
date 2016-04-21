@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:text="闹钟设置"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="时间"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setclock_btn_bg"
+            android:gravity="center_vertical"
+            android:padding="7dp"
+            android:text="00:00"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="重复"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/repeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setclock_btn_bg"
+            android:gravity="center_vertical"
+            android:padding="7dp"
+            android:text="仅一次"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/clockName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:hint="输入闹钟名称" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/ok"
+			style="@style/GuideBtn"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确定"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/cancel"
+            style="@style/GuideBtn"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="取消"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</RelativeLayout>

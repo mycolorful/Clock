@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="per.yrj.ui.MainActivity" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/msg"
+                style="@style/GuideBtn"
+                android:layout_weight="1"
+                android:text="消息" />
+
+            <Button
+                android:id="@+id/people"
+                style="@style/GuideBtn"
+                android:layout_weight="1"
+                android:text="联系" />
+
+            <Button
+                android:id="@+id/clock"
+                style="@style/GuideBtn"
+                android:layout_weight="1"
+                android:text="闹钟" />
+
+            <Button
+                android:id="@+id/weak"
+                style="@style/GuideBtn"
+                android:layout_weight="1"
+                android:text="唤醒" />
+        </LinearLayout>
+        
+        <ImageView 
+            android:id="@+id/iv_underline"
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/underline"/>
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--
+         <LinearLayout 
+        android:id="@+id/content_fra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" />
+    -->
+
+</LinearLayout>
